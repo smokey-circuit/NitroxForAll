@@ -6,16 +6,16 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\NitroxModel-Subnautica\NitroxModel-Subnautica.csproj" />
+        <ProjectReference Include="../NitroxModel-Subnautica/NitroxModel-Subnautica.csproj" />
     </ItemGroup>
 
     <ItemGroup>
         <Reference Include="LitJson">
-            <HintPath>$(GameManagedDir)\LitJson.dll</HintPath>
+            <HintPath>$(GameManagedDir)/LitJson.dll</HintPath>
             <Private>false</Private>
         </Reference>
         <Reference Include="protobuf-net, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-            <HintPath>..\Nitrox.Assets.Subnautica\protobuf-net.dll</HintPath>
+            <HintPath>../Nitrox.Assets.Subnautica/protobuf-net.dll</HintPath>
         </Reference>
     </ItemGroup>
 

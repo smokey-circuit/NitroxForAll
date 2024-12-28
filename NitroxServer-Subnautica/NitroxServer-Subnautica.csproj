@@ -9,8 +9,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\NitroxModel-Subnautica\NitroxModel-Subnautica.csproj" />
-        <ProjectReference Include="..\NitroxServer\NitroxServer.csproj" />
+        <ProjectReference Include="../NitroxModel-Subnautica/NitroxModel-Subnautica.csproj" />
+        <ProjectReference Include="../NitroxServer/NitroxServer.csproj" />
     </ItemGroup>
 
     <ItemGroup>
@@ -19,14 +19,14 @@
 
     <ItemGroup>
         <Reference Include="protobuf-net, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-            <HintPath>..\Nitrox.Assets.Subnautica\protobuf-net.dll</HintPath>
+            <HintPath>../Nitrox.Assets.Subnautica/protobuf-net.dll</HintPath>
         </Reference>
     </ItemGroup>
 
   <Target Name="MoveNitroxAssetsToServerOutput" AfterTargets="Build" Condition="'$(OS)' == 'Windows_NT'">
     <ItemGroup>
-      <NitroxSubnauticaTypeTreeData Include="..\Nitrox.Assets.Subnautica\**\*.tpk" />
+      <NitroxSubnauticaTypeTreeData Include="../Nitrox.Assets.Subnautica/**/*.tpk" />
     </ItemGroup>
-    <Copy SourceFiles="@(NitroxSubnauticaTypeTreeData)" DestinationFolder="$(TargetDir)\%(RecursiveDir)" />
+    <Copy SourceFiles="@(NitroxSubnauticaTypeTreeData)" DestinationFolder="$(TargetDir)/%(RecursiveDir)" />
   </Target>
 </Project>
