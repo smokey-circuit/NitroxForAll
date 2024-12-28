@@ -69,20 +69,21 @@ namespace NitroxModel.Platforms.Store
 
         public async Task<ProcessEx> StartGameAsync(string pathToGameExe, int steamAppId, string launchArguments)
         {
-            try
-            {
-                using ProcessEx steam = await StartPlatformAsync();
-
-                // Fixes it saying that steam isn't running on linux
-                // if (steam == null)
-                // {
-                //     throw new PlatformException(Instance, "Steam is not running and could not be found.");
-                // }
-            }
-            catch (OperationCanceledException ex)
-            {
-                throw new PlatformException(Instance, "Timeout reached while waiting for platform to start. Try again once platform has finished loading.", ex);
-            }
+            // Fixes it saying that steam isn't running on linux
+            // try
+            // {
+            //     using ProcessEx steam = await StartPlatformAsync();
+            //
+            //     
+            //     if (steam == null)
+            //     {
+            //         throw new PlatformException(Instance, "Steam is not running and could not be found.");
+            //     }
+            // }
+            // catch (OperationCanceledException ex)
+            // {
+            //     throw new PlatformException(Instance, "Timeout reached while waiting for platform to start. Try again once platform has finished loading.", ex);
+            // }
 
             return ProcessEx.Start(
                     pathToGameExe,
