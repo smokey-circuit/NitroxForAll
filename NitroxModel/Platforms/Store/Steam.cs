@@ -72,10 +72,12 @@ namespace NitroxModel.Platforms.Store
             try
             {
                 using ProcessEx steam = await StartPlatformAsync();
-                if (steam == null)
-                {
-                    throw new PlatformException(Instance, "Steam is not running and could not be found.");
-                }
+
+                // Fixes it saying that steam isn't running on linux
+                // if (steam == null)
+                // {
+                //     throw new PlatformException(Instance, "Steam is not running and could not be found.");
+                // }
             }
             catch (OperationCanceledException ex)
             {
