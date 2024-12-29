@@ -42,6 +42,9 @@ namespace NitroxLauncher
 
         public MainWindow()
         {
+            // Where the fun begings
+            NitroxForAll.Setup();
+            // :3
             Log.Setup();
             LauncherNotifier.Setup();
 
@@ -139,7 +142,8 @@ namespace NitroxLauncher
                      }
 
                      logic.CheckNitroxVersion();
-                     logic.ConfigureFirewall();
+                     // Disable temporary until config option is added
+                     // logic.ConfigureFirewall();
                  }, CancellationToken.None, TaskContinuationOptions.OnlyOnRanToCompletion, TaskScheduler.FromCurrentSynchronizationContext());
         }
 
