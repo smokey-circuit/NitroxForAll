@@ -3,7 +3,6 @@ using System.Runtime.InteropServices;
 
 namespace NitroxLauncher;
 
-
 public static class NitroxForAll
 {
 

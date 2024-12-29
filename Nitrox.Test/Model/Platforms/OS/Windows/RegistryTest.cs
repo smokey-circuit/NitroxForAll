@@ -1,6 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using System.Threading.Tasks;
 using NitroxModel.Platforms.OS.Windows.Internal;
 
 namespace NitroxModel.Platforms.OS.Windows

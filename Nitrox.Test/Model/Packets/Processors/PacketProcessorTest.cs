@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Nitrox.Test;
 using NitroxClient;
 using NitroxClient.Communication.Packets.Processors.Abstract;
