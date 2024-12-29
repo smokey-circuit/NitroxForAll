@@ -33,7 +33,7 @@ public class JoinServerJoinWindow
 
     public void ActivateInputField() => playerNameInputField.ActivateInputField();
 
-    public void SetIP(string serverIp) => lowerDetailText.text = $"{Language.main.Get("Nitrox_JoinServerIpAddress")}{Environment.NewLine}{(NitroxPrefs.HideIp.Value ? "****" : serverIp)}";
+    public void SetIP(string serverIp) => lowerDetailText.text = $"{Language.main.Get("Nitrox_JoinServer")}{Environment.NewLine}{(NitroxPrefs.HideIp.Value ? "****" : serverIp)}";
 
     public void SetHSB(Vector3 hsb) => colorPicker.SetHSB(hsb);
 

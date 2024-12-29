@@ -33,7 +33,7 @@
     "Nitrox_FirewallInterfering": "Seems like your firewall settings are interfering",
     "Nitrox_HideIp": "Hide IP addresses",
     "Nitrox_HidePing": "Hide Ping",
-    "Nitrox_IntroUWEPresents": "UNKNOWN WORLDS ENTERTAINMENT\n&\nTHE NITROX-TEAM\n\nPRESENT",
+    "Nitrox_IntroUWEPresents": "UNKNOWN WORLDS ENTERTAINMENT\n\nPRESENTS",
     "Nitrox_IntroWaitingPartner": "Waiting for a partner to join\n\nPress {0} to skip waiting",
     "Nitrox_InvalidUserName": "Please enter a valid player name.\n\nIt can not contain any space or dubious characters\nAllowed characters: A-Z a-z 0-9 _ . -\nLength: [3, 25]",
     "Nitrox_Join": "Join",

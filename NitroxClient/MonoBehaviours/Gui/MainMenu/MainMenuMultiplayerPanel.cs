@@ -290,7 +290,7 @@ namespace NitroxClient.MonoBehaviours.Gui.MainMenu
                     {
                         using (new GUILayout.HorizontalScope())
                         {
-                            GUILayout.Label(Language.main.Get("Nitrox_AddServerName"));
+                            GUILayout.Label(Language.main.Get("Nitrox_AddServer_NameDescription"));
                             GUI.SetNextControlName("serverNameField");
                             // 120 so users can't go too crazy.
                             serverNameInput = GUILayout.TextField(serverNameInput, 120);
@@ -298,7 +298,7 @@ namespace NitroxClient.MonoBehaviours.Gui.MainMenu
 
                         using (new GUILayout.HorizontalScope())
                         {
-                            GUILayout.Label(Language.main.Get("Nitrox_AddServerHost"));
+                            GUILayout.Label(Language.main.Get("Nitrox_AddServer_AddressDescription"));
                             GUI.SetNextControlName("serverHostField");
                             // 120 so users can't go too crazy.
                             serverHostInput = GUILayout.TextField(serverHostInput, 120);
@@ -306,12 +306,12 @@ namespace NitroxClient.MonoBehaviours.Gui.MainMenu
 
                         using (new GUILayout.HorizontalScope())
                         {
-                            GUILayout.Label(Language.main.Get("Nitrox_AddServerPort"));
+                            GUILayout.Label(Language.main.Get("Nitrox_AddServer_PortDescription"));
                             GUI.SetNextControlName("serverPortField");
                             serverPortInput = GUILayout.TextField(serverPortInput);
                         }
 
-                        if (GUILayout.Button(Language.main.Get("Nitrox_AddServerAdd")))
+                        if (GUILayout.Button(Language.main.Get("Nitrox_AddServer_Confirm")))
                         {
                             OnAddServerButtonClicked();
                         }
